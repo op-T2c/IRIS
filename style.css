@@ -11,7 +11,7 @@ body{
 }
 
 #mapi{
-	touch-action: auto;
+	touch-action: auto,pinch-zoom;
 }
 
 h1{
