@@ -1,0 +1,61 @@
+School offices and Facilities
+	- Principal's Office
+	- Administrative Office
+	- SHS Office
+	- English Department Office
+	- Mathematics Department Office
+	- HE Department Office
+	- Guidance Office
+	- SSG Office
+	- Clinic
+	- Function Hall
+	- Library
+	- Canteen
+Building A
+	Floor 1
+		- English Dept
+		- Clinic 
+		- Guidance Office
+		- Canteen
+		- Rooms
+Building B
+	Floor 1
+		- B-101
+		- B-102
+		- Math Dept
+	Floor 2
+		- SHS dept
+		- B-201
+	Floor 3 
+		- B-301
+		- B-302
+Building C
+	Floor 1
+		- SSG Office 
+		- Rooms
+	Floor 2 
+		- Rooms
+Building D
+	Floor 1
+		- HE Dept
+Building E
+	Floor 1
+		- Rooms
+Building F
+	Floor 1
+		- Science Lab
+		- Library
+		- Function Hall
+	Floor 2 
+		- Rooms
+	Floor 3
+		- Rooms
+	Floor 4
+		- Comlab 1 & 2
+		- Rooms
+Building G
+	Floor 1
+		- Office of the Principal
+		- Administrative Office
+	Floor 2-4
+		- Rooms
