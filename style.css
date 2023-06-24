@@ -1,11 +1,13 @@
 body{
-	background-color: #170d0d;
+	background-color: #636363;
 	display:block !important
 }
 
 #map {	
 	position: fixed;
-	width: 100%;
+	top: 15px;
+	left: 290px;	
+	width: 80%;
 	height: 100%;
 	overflow: hidden;
 	border: none;
