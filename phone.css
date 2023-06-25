@@ -1,0 +1,849 @@
+@media only screen and (max-width: 600px) {
+@keyframes transitionIn {
+    from{
+        opacity:0;} 
+    to{ 
+        opacity:1;}}
+
+body{
+    background-color: rgb(19, 19, 19);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+
+    overflow-x: hidden;}
+
+.sidebar{
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top:0%;
+    left:-100%;
+    height: 100%;
+    width: 60%;
+
+    box-shadow: 2px 2px 10px;
+    transition: all 0.5s;
+
+    overflow-y: scroll;
+    overflow-x: hidden;}
+
+#myInput {
+    background-image: url('/css/searchicon.png');
+    background-position: 10px 12px;
+    background-repeat: no-repeat;
+    width: 60%;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px; 
+    border: 1px solid #ddd;
+    margin-bottom: 12px;}
+          
+#myUL {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;}        
+    #myUL li a {
+    border: 1px solid #ddd;
+    margin-top: -1px;
+    background-color: #f6f6f6;
+    padding: 12px;
+    text-decoration: none; 
+    font-size: 18px;
+    color: black; 
+    display: block;}      
+    #myUL li a:hover:not(.header) {
+    background-color: #eee;}  
+    
+#TEST {
+        background-color:transparent;
+        background-repeat: no-repeat;
+        border: none;
+        overflow: hidden;
+        outline: none;
+
+        width: 3%;
+        height: 6%;
+
+        position: absolute;
+        top: 0.5%;
+        left:3%;
+    
+        transition: all 0.5s;}
+
+    #ham{  
+        color: rgb(255, 255, 255);
+        cursor: default;
+        font-size: 200%;
+
+        position: absolute;
+        left: 20%;
+        top: -10%;
+        overflow: hidden;
+    }
+
+.closenav{
+    position: absolute;
+    top: auto;
+    left: 87%;
+
+    cursor: default;
+            
+    font-size: 42px;
+    background-color: transparent;
+    text-align: center;
+    overflow: hidden;
+    outline: none;
+    border: none;}
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;}
+
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    font-size: 18px;}
+
+#TEST2 {
+    background-color:transparent;
+    background-repeat: no-repeat;
+    border: none;
+    overflow: hidden;
+    outline: none;
+
+    width: 3%;
+    height: 6%;
+
+    position: absolute;
+    top:0%;
+    left:0%;
+    
+    transition: all 0.5s;}
+    #ham2{  
+        color: rgb(255, 255, 255);
+        cursor: default;
+        font-size: 200%;
+
+        position: sticky;
+        left: 50px;
+        top: -0.5%;}
+
+.sidebar2{
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    top:0%;
+    left:-100%;
+    height: 100%;
+    width: 60%;
+    
+    box-shadow: 2px 2px 10px;
+    transition: all 0.5s;
+
+    overflow-y: scroll;
+    overflow-x: hidden;}
+    .Space {
+        background-color: #ffffff;
+        color: #ffffff;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        text-align: left;
+        border: none;
+        outline: none;
+        transition: 0.4s;}
+    #Nav2close{
+        position: absolute;
+        top: -6px;
+        left: 87%;
+    
+        cursor: default;
+                
+        font-size: 42px;
+        background-color: transparent;
+        text-align: center;
+        overflow: hidden;
+        outline: none;
+        border: none;}
+
+.accordion2 {
+    background-color: #ffffff;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    font-size: 18px;}
+
+.panel2 {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;}
+
+.rooms{
+    list-style-type: none;}
+    .Rooms{
+        cursor: pointer;
+        font-size: 18px;}
+
+.popup{
+    width: 80%;
+    height: 70%;
+    background-color: aliceblue;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    visibility: hidden;
+    transition: transform 0.05s;
+        
+    box-shadow: 2px 2px 10px;
+        
+    z-index:2;}
+
+    .Room{
+        width: 100%;
+        height: 35%;
+        background-color: rgb(0, 136, 255);
+        position: absolute;
+        top: 0%;
+        left: 0%;}
+
+        .Room img{
+            width: 330px;
+            height: 225px;
+        }
+
+    .Detail{
+        position: absolute;
+        top: 33%;
+        left: 30%;}
+        
+        .B-name{
+            font-size: 40px;
+        text-align: center;}
+        .B-detail{
+            font-size: 25px;
+            text-align: center;
+
+}
+
+    .open-BAED{
+        visibility: visible;
+        transform: translate(-50%,-50%) scale(1);}
+        #baed{
+            position:absolute;
+            left:0%;
+
+            font-size: 40px;
+            text-align: center;
+
+            position: absolute;
+            top: 33%;
+            left: 0%;}
+        #baedD{
+            font-size: 25px;
+            text-align: center;
+
+            position: absolute;
+            top:55%;
+            left:32%;}
+    .open-BA101{
+        visibility: visible;
+        transform: translate(-50%,-50%) scale(1);}
+    .open-BA102{
+        visibility: visible;
+        transform: translate(-50%,-50%) scale(1);}
+    .open-BAGC{
+        visibility: visible;
+        transform: translate(-50%,-50%) scale(1);}
+        #bagc{
+            position:absolute;
+            left:0%;
+
+            font-size: 35px;
+            text-align: center;
+
+            position: absolute;
+            top: 33%;
+            left: 0%;}
+        #bagcD{
+            font-size: 25px;
+            text-align: center;
+
+            position: absolute;
+            top:55%;
+            left:32%;}
+    .open-BA103{
+        visibility: visible;
+        transform: translate(-50%,-50%) scale(1);}
+    .open-BAU{
+        visibility: visible;
+        transform: translate(-50%,-50%) scale(1);}
+        #bau{
+            position:absolute;
+            left:0%;
+
+            font-size: 35px;
+            text-align: center;
+
+            position: absolute;
+            top: 33%;
+            left: 15%;}
+        #bauD{
+            font-size: 25px;
+            text-align: center;
+
+            position: absolute;
+            top:55%;
+            left:23%;}
+    .open-BA104{
+        visibility: visible;
+        transform: translate(-50%,-50%) scale(1);}
+    .open-BA105{
+        visibility: visible;
+        transform: translate(-50%,-50%) scale(1);}
+    .open-BASC{
+        visibility: visible;
+        transform: translate(-50%,-50%) scale(1);}
+        #basc{
+            position:absolute;
+            left:0%;
+
+            font-size: 35px;
+            text-align: center;
+
+            position: absolute;
+            top: 33%;
+            left: 15%;}
+        #bascD{
+            font-size: 25px;
+            text-align: center;
+
+            position: absolute;
+            top:55%;
+            left:32%;}
+
+
+    .open-BB101{
+        visibility: visible;
+        transform: translate(-50%,-50%) scale(1);}
+    .open-BB102{
+        visibility: visible;
+        transform: translate(-50%,-50%) scale(1);}
+    .open-BBMD{
+        visibility: visible;
+        transform: translate(-50%,-50%) scale(1);}
+        #bbmd{
+            position:absolute;
+            left:0%;
+
+            font-size: 35px;
+            text-align: center;
+
+            position: absolute;
+            top: 33%;
+            left: 6%;}
+        #bbmdD{
+            font-size: 25px;
+            text-align: center;
+
+            position: absolute;
+            top:55%;
+            left:35%;}
+    .open-BB202{
+        visibility: visible;
+        transform: translate(-50%,-50%) scale(1);}
+    .open-BBSHS{
+        visibility: visible;
+        transform: translate(-50%,-50%) scale(1);}
+        #bbshs{
+            position:absolute;
+            left:0%;
+
+            font-size: 35px;
+            text-align: center;
+
+            position: absolute;
+            top: 33%;
+            left: 25%;}
+        #bbshsD{
+            font-size: 25px;
+            text-align: center;
+
+            position: absolute;
+            top:55%;
+            left:32%;}
+    .open-BB301{
+        visibility: visible;
+        transform: translate(-50%,-50%) scale(1);}
+    .open-BB302{
+        visibility: visible;
+        transform: translate(-50%,-50%) scale(1);}
+
+
+    .open-BC101{
+        visibility: visible;
+        transform: translate(-50%,-50%) scale(1);}
+    .open-BC102{
+        visibility: visible;
+        transform: translate(-50%,-50%) scale(1);}
+    .open-BC201{
+        visibility: visible;
+        transform: translate(-50%,-50%) scale(1);}
+    .open-BC202{
+        visibility: visible;
+        transform: translate(-50%,-50%) scale(1);}
+    .open-BCSSG{
+        visibility: visible;
+        transform: translate(-50%,-50%) scale(1);}
+        #bcssg{
+            position:absolute;
+            left:0%;
+
+            font-size: 35px;
+            text-align: center;
+
+            position: absolute;
+            top: 33%;
+            left: 25%;}
+        #bcssgD{
+            font-size: 25px;
+            text-align: center;
+
+            position: absolute;
+            top:55%;
+            left:32%;}
+
+
+    .open-BDHE{
+        visibility: visible;
+        transform: translate(-50%,-50%) scale(1);}
+        #bdhe{
+            position:absolute;
+            left:0%;
+
+            font-size: 35px;
+            text-align: center;
+
+            position: absolute;
+            top: 33%;
+            left: 15%;}
+        #bdheD{
+            font-size: 25px;
+            text-align: center;
+
+            position: absolute;
+            top:55%;
+            left:32%;}
+
+
+    .open-BE101{
+        visibility: visible;
+        transform: translate(-50%,-50%) scale(1);}
+    .open-BE102{
+        visibility: visible;
+        transform: translate(-50%,-50%) scale(1);}
+
+
+    .open-BFSL1{
+        visibility: visible;
+        transform: translate(-50%,-50%) scale(1);}
+        #bfsl1{
+            position:absolute;
+            left:0%;
+
+            font-size: 35px;
+            text-align: center;
+
+            position: absolute;
+            top: 33%;
+            left: 26%;}
+        #bfsl1D{
+            font-size: 25px;
+            text-align: center;
+
+            position: absolute;
+            top:55%;
+            left:32%;}
+    .open-BFSL2{
+        visibility: visible;
+        transform: translate(-50%,-50%) scale(1);}
+        #bfsl2{
+            position:absolute;
+            left:0%;
+
+            font-size: 35px;
+            text-align: center;
+
+            position: absolute;
+            top: 33%;
+            left: 26%;}
+        #bfsl2D{
+            font-size: 25px;
+            text-align: center;
+
+            position: absolute;
+            top:55%;
+            left:32%;}
+    .open-BFLFH{
+        visibility: visible;
+        transform: translate(-50%,-50%) scale(1);}
+        #bflfh{
+            position:absolute;
+            left:0%;
+
+            font-size: 35px;
+            text-align: center;
+
+            position: absolute;
+            top: 33%;
+            left: 3%;}
+        #bflfhD{
+            font-size: 25px;
+            text-align: center;
+
+            position: absolute;
+            top:55%;
+            left:33%;}
+    .open-BF201{
+        visibility: visible;
+        transform: translate(-50%,-50%) scale(1);}
+    .open-BF202{
+        visibility: visible;
+        transform: translate(-50%,-50%) scale(1);}
+    .open-BF203{
+        visibility: visible;
+        transform: translate(-50%,-50%) scale(1);}
+    .open-BF204{
+        visibility: visible;
+        transform: translate(-50%,-50%) scale(1);}
+    .open-BF301{
+        visibility: visible;
+        transform: translate(-50%,-50%) scale(1);}
+    .open-BF302{
+        visibility: visible;
+        transform: translate(-50%,-50%) scale(1);}
+    .open-BF303{
+        visibility: visible;
+        transform: translate(-50%,-50%) scale(1);}
+    .open-BF304{
+        visibility: visible;
+        transform: translate(-50%,-50%) scale(1);}
+    .open-BFCL1{
+        visibility: visible;
+        transform: translate(-50%,-50%) scale(1);}
+        #bfcl1{
+            position:absolute;
+            position:absolute;
+            left:0%;
+
+            font-size: 35px;
+            text-align: center;
+
+            position: absolute;
+            top: 33%;
+            left: 23%;}
+        #bfcl1D{
+            font-size: 25px;
+            text-align: center;
+
+            position: absolute;
+            top:55%;
+            left:32%;}
+    .open-BFCL2{
+        visibility: visible;
+        transform: translate(-50%,-50%) scale(1);}
+        #bfcl2{
+            position:absolute;
+            position:absolute;
+            left:0%;
+
+            font-size: 35px;
+            text-align: center;
+
+            position: absolute;
+            top: 33%;
+            left: 23%;}
+        #bfcl2D{
+            font-size: 25px;
+            text-align: center;
+
+            position: absolute;
+            top:55%;
+            left:32%;}
+    .open-BF403{
+        visibility: visible;
+        transform: translate(-50%,-50%) scale(1);}
+    .open-BF404{
+        visibility: visible;
+        transform: translate(-50%,-50%) scale(1);}
+
+
+    .open-BGAO{
+        visibility: visible;
+        transform: translate(-50%,-50%) scale(1);}
+        #bgao{
+            position:absolute;
+            left:0%;
+
+            font-size: 40px;
+            text-align: center;
+
+            position: absolute;
+            top: 33%;
+            left: 0%;}
+        #bgaoD{
+            font-size: 25px;
+            text-align: center;
+
+            position: absolute;
+            top:55%;
+            left:32%;}
+    .open-BGPO{
+        visibility: visible;
+        transform: translate(-50%,-50%) scale(1);}
+        #bgpo{
+            position:absolute;
+            left:0%;
+
+            font-size: 40px;
+            text-align: center;
+
+            position: absolute;
+            top: 33%;
+            left: 0%;}
+        #bgpoD{
+            font-size: 25px;
+            text-align: center;
+
+            position: absolute;
+            top:55%;
+            left:32%;}
+    .open-BG201{
+        visibility: visible;
+        transform: translate(-50%,-50%) scale(1);}
+    .open-BG202{
+        visibility: visible;
+        transform: translate(-50%,-50%) scale(1);}
+    .open-BG301{
+        visibility: visible;
+        transform: translate(-50%,-50%) scale(1);}
+    .open-BG302{
+        visibility: visible;
+        transform: translate(-50%,-50%) scale(1);}
+    .open-BG401{
+        visibility: visible;
+        transform: translate(-50%,-50%) scale(1);}
+    .open-BG402{
+        visibility: visible;
+        transform: translate(-50%,-50%) scale(1);}
+    
+.closeTAB{
+        
+    width: 100%;
+            height: 100%;
+        
+    background-color: transparent;
+    overflow: hidden;
+        
+    position: fixed;
+    top: 50%;
+    left: 50%;
+        
+    transform: translate(-50%,-50%) scale(0.1);
+    visibility: hidden;
+    transition: transform 0.05s;
+        
+    z-index:1;}
+
+    .open-closeBAED{
+        visibility: visible;
+        transform: translate(-50%,-50%) scale(1);}
+    .open-closeBA101{
+        visibility: visible;
+        transform: translate(-50%,-50%) scale(1);}
+    .open-closeBA102{
+        visibility: visible;
+        transform: translate(-50%,-50%) scale(1);}
+    .open-closeBAGC{
+        visibility: visible;
+        transform: translate(-50%,-50%) scale(1);}
+    .open-closeBA103{
+        visibility: visible;
+        transform: translate(-50%,-50%) scale(1);}
+    .open-closeBAU{
+        visibility: visible;
+        transform: translate(-50%,-50%) scale(1);}
+    .open-closeBA104{
+        visibility: visible;
+        transform: translate(-50%,-50%) scale(1);}
+    .open-closeBA105{
+        visibility: visible;
+        transform: translate(-50%,-50%) scale(1);}
+    .open-closeBASC{
+        visibility: visible;
+        transform: translate(-50%,-50%) scale(1);}
+
+
+    .open-closeBB101{
+        visibility: visible;
+        transform: translate(-50%,-50%) scale(1);}
+    .open-closeBB102{
+        visibility: visible;
+        transform: translate(-50%,-50%) scale(1);}
+    .open-closeBBMD{
+        visibility: visible;
+        transform: translate(-50%,-50%) scale(1);}
+    .open-closeBB202{
+        visibility: visible;
+        transform: translate(-50%,-50%) scale(1);}
+    .open-closeBBSHS{
+        visibility: visible;
+        transform: translate(-50%,-50%) scale(1);}
+    .open-closeBB301{
+        visibility: visible;
+        transform: translate(-50%,-50%) scale(1);}
+    .open-closeBB302{
+         visibility: visible;
+        transform: translate(-50%,-50%) scale(1);}
+
+
+    .open-closeBC101{
+        visibility: visible;
+        transform: translate(-50%,-50%) scale(1);}
+    .open-closeBC102{
+        visibility: visible;
+        transform: translate(-50%,-50%) scale(1);}
+    .open-closeBC201{
+        visibility: visible;
+        transform: translate(-50%,-50%) scale(1);}
+    .open-closeBC202{
+        visibility: visible;
+        transform: translate(-50%,-50%) scale(1);}
+    .open-closeBCSSG{
+        visibility: visible;
+        transform: translate(-50%,-50%) scale(1);}
+
+
+    .open-closeBDHE{
+        visibility: visible;
+        transform: translate(-50%,-50%) scale(1);}
+    
+
+    .open-closeBE101{
+        visibility: visible;
+        transform: translate(-50%,-50%) scale(1);}
+    .open-closeBE102{
+        visibility: visible;
+        transform: translate(-50%,-50%) scale(1);}
+
+
+    .open-closeBFSL1{
+    visibility: visible;
+    transform: translate(-50%,-50%) scale(1);}
+    .open-closeBFSL2{
+    visibility: visible;
+    transform: translate(-50%,-50%) scale(1);}
+    .open-closeBFLFH{
+    visibility: visible;
+    transform: translate(-50%,-50%) scale(1);}
+    .open-closeBF201{
+    visibility: visible;
+    transform: translate(-50%,-50%) scale(1);}
+    .open-closeBF202{
+    visibility: visible;
+    transform: translate(-50%,-50%) scale(1);}
+    .open-closeBF203{
+    visibility: visible;
+    transform: translate(-50%,-50%) scale(1);}
+    .open-closeBF204{
+    visibility: visible;
+    transform: translate(-50%,-50%) scale(1);}
+    .open-closeBF301{
+    visibility: visible;
+    transform: translate(-50%,-50%) scale(1);}
+    .open-closeBF302{
+    visibility: visible;
+    transform: translate(-50%,-50%) scale(1);}
+    .open-closeBF303{
+    visibility: visible;
+    transform: translate(-50%,-50%) scale(1);}
+    .open-closeBF304{
+    visibility: visible;
+    transform: translate(-50%,-50%) scale(1);}
+    .open-closeBFCL1{
+    visibility: visible;
+    transform: translate(-50%,-50%) scale(1);}
+    .open-closeBFCL2{
+    visibility: visible;
+    transform: translate(-50%,-50%) scale(1);}
+    .open-closeBF403{
+    visibility: visible;
+    transform: translate(-50%,-50%) scale(1);}
+    .open-closeBF404{
+    visibility: visible;
+    transform: translate(-50%,-50%) scale(1);}
+
+    
+    .open-closeBGAO{
+        visibility: visible;
+        transform: translate(-50%,-50%) scale(1);}
+    .open-closeBGPO{
+        visibility: visible;
+        transform: translate(-50%,-50%) scale(1);}
+    .open-closeBG201{
+        visibility: visible;
+        transform: translate(-50%,-50%) scale(1);}
+    .open-closeBG202{
+        visibility: visible;
+        transform: translate(-50%,-50%) scale(1);}
+    .open-closeBG301{
+        visibility: visible;
+        transform: translate(-50%,-50%) scale(1);}
+    .open-closeBG302{
+        visibility: visible;
+        transform: translate(-50%,-50%) scale(1);}
+    .open-closeBG401{
+        visibility: visible;
+        transform: translate(-50%,-50%) scale(1);}
+    .open-closeBG402{
+        visibility: visible;
+        transform: translate(-50%,-50%) scale(1);}
+
+    .close{
+        width: 100%;
+        height: 100%;
+        
+        position: absolute;
+        top: auto;
+        left: auto;
+        
+        background-color: Red;
+        opacity: 0%;
+        text-align: center;
+        overflow: hidden;
+        outline: none;
+        border: none;}
+
+  
+        .map{
+            position: absolute;
+            height: 100%;
+            width: 400px;
+            overflow-y: none;
+        }
+
+    }
