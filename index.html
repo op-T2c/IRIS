@@ -2,228 +2,25 @@
 
 <html>
 
-<head> 
+    <head> 
     
-    <title>DOON: SNNHS</title>
-    <link rel="stylesheet" href="style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>DOON: SNNHS</title>
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     
-</head>
+    </head>
 
-<body style="display:none">
+    <body style="display:none">
 
-    <iframe id="map" src="map.html"> </iframe>
+        <iframe id="map" src="map.html"> </iframe>
 
-<!------------------------------------------------------------------------------------------------------------------->
-    <span id="TEST" onclick="openNav()">&#9776</span>
-
-    <div class="sidebar" id="SIDEBAR">
-        
-        <span class="closenav" onclick="closeNav()">&times;</span>
-
-        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search.....">
-
-        <ul id="myUL">
-            <li><a href="#" type="submit" onclick="openPopUp()">TEST</a></li>
-        </ul>
-
-    </div>
-
-<!------------------------------------------------------------------------------------------------------------------>
-
-    <span id="TEST2" onclick="openNav2()">&#9776</span>
-
-    <div class="sidebar2" id="SIDEBAR2">
-            <button type="button" id="Nav2close" onclick="closeNav2()">&times;</button>
-
-        <button class="Space"></button>
-            <div class="panel">
-                <p></p>
-            </div>
-
-        <button class="accordion">Building A</button>
-            <div class="panel">
-                <button class="accordion2">Floor 1</button>
-                <div class="panel2">
-                    <ul>
-                        <li><p class="Rooms" onclick="openPopUp()">English Department</p></li>
-                        <li><p class="Rooms" onclick="openPopUp()">Room 1</p></li>
-                        <li><p class="Rooms" onclick="openPopUp()">Room 2</p></li>
-                        <li><p class="Rooms" onclick="openPopUp()">Room 3</p></li>
-                        <li><p class="Rooms" onclick="openPopUp()">Room 4</p></li>
-                        <li><p class="Rooms" onclick="openPopUp()">Room 5</p></li>
-                        <li><p class="Rooms" onclick="openPopUp()">Room 6</p></li>
-                    </ul>
-                </div>
-            </div>
-
-        <button class="accordion">Building B</button>
-            <div class="panel">
-                <button class="accordion2">Floor 1</button>
-                <div class="panel2">
-                </div>
-                
-                <button class="accordion2">Floor 2</button>
-                <div class="panel2">
-                </div>
-                
-                <button class="accordion2">Floor 3</button>
-                <div class="panel2">
-                </div>
-            </div>
-
-        <button class="accordion">Building C</button>
-            <div class="panel">
-                <button class="accordion2">Floor 1</button>
-                <div class="panel2">
-                </div>
-                
-                <button class="accordion2">Floor 2</button>
-                <div class="panel2">
-                </div>
-                
-            </div>
-
-        <button class="accordion">Building D</button>
-            <div class="panel">
-                <p>Lorem ipsum...</p>
-            </div>
-
-        <button class="accordion">Building E</button>
-            <div class="panel">
-                <p>Lorem ipsum...</p>
-            </div>
-
-        <button class="accordion">Building F</button>
-            <div class="panel">
-                <p>Lorem ipsum...</p>
-            </div>
-
-        <button class="accordion">Building G</button>
-            <div class="panel">
-                <p>Lorem ipsum...</p>
-            </div>
-
-    </div>
-
-<!------------------------------------------------------------------------------------------------------------------>
-    <div class="popup" id="PopUp">
-
-        <div class="Room"></div>
-
-        <div class="Detail">
-            <h1>Room Name</h1>
-            <h4>Building and floor and room number</h4>
+    <!--
+    <div id="container">
+        <div id="draggable-elem">
+            <img src="Placeholder/map2.png">
         </div>
+      </div>
+      <script src="script.js"></script> -->
 
-    </div>
-
-    <div class="closeTAB" id="CloseTab">
-        <button type="button" id="close" onclick="closePopUp()"></button>
-    </div
-        
-<!--
-<div id="container">
-    <div id="draggable-elem">
-        <img src="Placeholder/map2.png">
-    </div>
-  </div>
-  <script src="script.js"></script>
--->
-<!------------------------------------------------------------------------------------------------------------------>
-    <script>
-        let popup = document.getElementById("PopUp");
-        let closetab = document.getElementById("CloseTab");
-
-        function openPopUp(){
-            popup.classList.add("open-PopUp")
-            closetab.classList.add("open-closeTAB")
-        }
-
-        function closePopUp(){
-            popup.classList.remove("open-PopUp")
-            closetab.classList.remove("open-closeTAB")}
-
-//------------------------------------------------------------------------------------------------------------------
-        
-        function openNav(){
-            document.getElementById("SIDEBAR").style.left ="0px"
-            document.getElementById("SIDEBAR2").style.left ="1366px";
-        }
-
-        function closeNav(){
-            document.getElementById("SIDEBAR").style.left ="-273px";
-        }
-
-        function myFunction() {
-
-        var input, filter, ul, li, a, i, txtValue;
-            input = document.getElementById('myInput');
-            filter = input.value.toUpperCase();
-            ul = document.getElementById("myUL");
-            li = ul.getElementsByTagName('li');
-
-// Loop through all list items, and hide those who don't match the search query
-            for (i = 0; i < li.length; i++) {
-                a = li[i].getElementsByTagName("a")[0];
-                txtValue = a.textContent || a.innerText;
-                if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                li[i].style.display = "";
-                } else {
-                li[i].style.display = "none";
-                    }
-                }
-            }
-
-//------------------------------------------------------------------------------------------------------------------
-        function openNav2(){
-            document.getElementById("SIDEBAR2").style.left ="1095px";
-            document.getElementById("SIDEBAR").style.left ="-273px";
-        }
-
-        function closeNav2(){
-            document.getElementById("SIDEBAR2").style.left ="1366px";
-        }
-
-
-    var acc = document.getElementsByClassName("accordion");
-    var i;
-
-// Toggle between adding and removing the "active" class to highlight the button that controls the panel
-        for (i = 0; i < acc.length; i++) {
-            acc[i].addEventListener("click", function() { 
-            this.classList.toggle("active");
-
-// Toggle between hiding and showing the active panel
-        var panel = this.nextElementSibling;
-            if (panel.style.display === "block") {
-                panel.style.display = "none";
-            } else {
-                panel.style.display = "block";
-            }
-        });
-    }
-
-    var acc = document.getElementsByClassName("accordion2");
-    var j;
-
-// Toggle between adding and removing the "active" class to highlight the button that controls the panel
-        for (j = 0; j < acc.length; j++) {
-            acc[j].addEventListener("click", function() { 
-            this.classList.toggle("active");
-
-// Toggle between hiding and showing the active panel
-        var panel = this.nextElementSibling;
-            if (panel.style.display === "block") {
-                panel.style.display = "none";
-            } else {
-                panel.style.display = "block";
-            }
-        });
-    }
-
-    </script>
-
-
-</body>
+    </body>
 </html>
