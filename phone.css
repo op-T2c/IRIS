@@ -78,9 +78,9 @@ body{
         cursor: default;
         font-size: 200%;
 
-        position: absolute;
+        position: sticky;
         left: 0%;
-        top: 5%;
+        top: 10%;
         overflow: hidden;
     }
 
@@ -920,7 +920,7 @@ body{
 
   
         .map{
-            position: absolute;
+            position: fixed;
             top: 0%;
             left: 0%;
 
