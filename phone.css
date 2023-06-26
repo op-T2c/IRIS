@@ -234,13 +234,14 @@ body{
     .Detail{
         position: absolute;
         top: 33%;
-        left: 30%;}
+        left: 20%;}
         
         .B-name{
             font-size: 40px;
         text-align: center;}
 
         .B-pop{
+            
             font-size: 40px;
             text-align: center;
         }
@@ -899,7 +900,7 @@ body{
 
         .roomlist{
             background-color: transparent;
-            height: 150%;
+            height: 200%;
             width: 100%;
 
             position: absolute;
