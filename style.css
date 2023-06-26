@@ -153,10 +153,14 @@ body{
         cursor: pointer;
         padding: 18px;
         width: 100%;
-        text-align: left;
+        height: 20%;
+        text-align: center;
         border: none;
         outline: none;
         transition: 0.4s;}
+
+        #log{height: 150%;}
+        
     #Nav2close{
         position: absolute;
         top: -6px;
@@ -908,7 +912,8 @@ body{
 
         .map{
             position: absolute;
-            width: 50%;
-            left: 25%;
+            height: 90%;
+            width: 30%;
+            left: 35%;
             overflow-y: none;
         }
