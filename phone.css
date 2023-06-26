@@ -161,10 +161,13 @@ body{
         cursor: pointer;
         padding: 18px;
         width: 100%;
-        text-align: left;
+        text-align: center;
         border: none;
         outline: none;
         transition: 0.4s;}
+
+        #log{height: 150px;}
+
     #Nav2close{
         position: absolute;
         top: -6px;
@@ -900,7 +903,7 @@ body{
 
         .roomlist{
             background-color: transparent;
-            height: 200%;
+            height: 210%;
             width: 100%;
 
             position: absolute;
