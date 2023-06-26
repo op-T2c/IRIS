@@ -26,7 +26,9 @@ body{
     transition: all 0.5s;
 
     overflow-y: scroll;
-    overflow-x: hidden;}
+    overflow-x: hidden;
+
+    z-index: 1;}
 
 #myInput {
     background-image: url('/css/searchicon.png');
@@ -55,20 +57,21 @@ body{
     background-color: #eee;}  
     
 #TEST {
-        background-color:transparent;
-        background-repeat: no-repeat;
-        border: none;
-        overflow: hidden;
-        outline: none;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    overflow: hidden;
+    outline: none;
 
-        width: 3%;
-        height: 6%;
+    width: 15%;
+    height: 6%;
 
-        position: absolute;
-        top: 0.5%;
-        left:3%;
+    position: absolute;
+    top:4%;
+    left:0.7%;
     
-        transition: all 0.5s;}
+    transition: all 0.5s;
+    z-index: 1;}
 
     #ham{  
         color: rgb(255, 255, 255);
@@ -76,8 +79,8 @@ body{
         font-size: 200%;
 
         position: absolute;
-        left: 20%;
-        top: -10%;
+        left: 0%;
+        top: 5%;
         overflow: hidden;
     }
 
@@ -120,12 +123,12 @@ body{
     overflow: hidden;
     outline: none;
 
-    width: 3%;
+    width: 15%;
     height: 6%;
 
     position: absolute;
     top:0%;
-    left:0%;
+    left:0.5%;
     
     transition: all 0.5s;}
     #ham2{  
@@ -134,7 +137,7 @@ body{
         font-size: 200%;
 
         position: sticky;
-        left: 50px;
+        left: 9%;
         top: -0.5%;}
 
 .sidebar2{
@@ -149,7 +152,9 @@ body{
     transition: all 0.5s;
 
     overflow-y: scroll;
-    overflow-x: hidden;}
+    overflow-x: hidden;
+
+    z-index: 1;}
     .Space {
         background-color: #ffffff;
         color: #ffffff;
@@ -222,8 +227,8 @@ body{
         left: 0%;}
 
         .Room img{
-            width: 330px;
-            height: 225px;
+            width: 100%;
+            height: 100%;
         }
 
     .Detail{
@@ -234,6 +239,12 @@ body{
         .B-name{
             font-size: 40px;
         text-align: center;}
+
+        .B-pop{
+            font-size: 40px;
+            text-align: center;
+        }
+
         .B-detail{
             font-size: 25px;
             text-align: center;
@@ -651,6 +662,30 @@ body{
         visibility: visible;
         transform: translate(-50%,-50%) scale(1);}
     
+
+    .open-BA{
+        visibility: visible;
+        transform: translate(-50%,-50%) scale(1);}
+    .open-BB{
+        visibility: visible;
+        transform: translate(-50%,-50%) scale(1);}
+    .open-BC{
+        visibility: visible;
+        transform: translate(-50%,-50%) scale(1);}
+    .open-BD{
+        visibility: visible;
+        transform: translate(-50%,-50%) scale(1);}
+    .open-BE{
+        visibility: visible;
+        transform: translate(-50%,-50%) scale(1);}
+    .open-BF{
+        visibility: visible;
+        transform: translate(-50%,-50%) scale(1);}
+    .open-BG{
+        visibility: visible;
+        transform: translate(-50%,-50%) scale(1);}
+
+
 .closeTAB{
         
     width: 100%;
@@ -823,6 +858,30 @@ body{
         visibility: visible;
         transform: translate(-50%,-50%) scale(1);}
 
+
+    .open-closeBA{
+        visibility: visible;
+        transform: translate(-50%,-50%) scale(1);}
+    .open-closeBB{
+        visibility: visible;
+        transform: translate(-50%,-50%) scale(1);}
+    .open-closeBC{
+        visibility: visible;
+        transform: translate(-50%,-50%) scale(1);}
+    .open-closeBD{
+        visibility: visible;
+        transform: translate(-50%,-50%) scale(1);}
+    .open-closeBE{
+        visibility: visible;
+        transform: translate(-50%,-50%) scale(1);}
+    .open-closeBF{
+        visibility: visible;
+        transform: translate(-50%,-50%) scale(1);}
+    .open-closeBG{
+        visibility: visible;
+        transform: translate(-50%,-50%) scale(1);}
+
+
     .close{
         width: 100%;
         height: 100%;
@@ -838,12 +897,39 @@ body{
         outline: none;
         border: none;}
 
+        .roomlist{
+            background-color: transparent;
+            height: 150%;
+            width: 100%;
+
+            position: absolute;
+            top: 120%;
+            left: -10%;
+
+            overflow-y: auto;
+            overflow-x: hidden;}
+
+            .RoomLST{
+                font-size: 25px;
+                text-align: left;
+    
+                position: absolute;
+                left: 10%;
+                top: 50%;
+            }
+
   
         .map{
             position: absolute;
+            top: 0%;
+            left: 0%;
+
             height: 100%;
-            width: 400px;
+            width: 100%;
             overflow-y: none;
+
+            z-index: 0;
+
         }
 
     }
